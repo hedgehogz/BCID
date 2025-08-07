@@ -13,7 +13,8 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 3.2vh;
+
+        font-size: 3.5vh;
         font-weight: bolder;
     }
 
@@ -143,7 +144,9 @@ div.main-grid {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 3.2vh;
+        flex-wrap: wrap;
+
+        font-size: 4vh;
         font-weight: bolder;
     }
 
