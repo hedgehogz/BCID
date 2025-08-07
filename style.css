@@ -1,0 +1,239 @@
+header, footer {
+    background-color: rgb(120, 15, 48);
+    height: 7.5vh;
+    width: 100vw;
+}
+
+main {
+    background-color: white;
+    height: 85vh;
+    width: 100vw;
+
+    div.main-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.2vh;
+        font-weight: bolder;
+    }
+
+    div.bottom-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.75vh;
+    }
+
+    div.bottom-grid-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 6%;
+        width: 100%;
+        
+        div.bottom-grid {
+            display: grid;
+            grid-template-columns: 1.25fr .5fr 1.25fr;
+            height: 100%;
+            width: 90%;
+
+            button {
+                height: 100%;
+                width: 100%;
+
+                background-color: rgb(120, 15, 48);
+                color: white;
+                font-size: 2.5vh;
+                padding: 0.5vh 1vh;
+
+                font-weight: bold;
+                border: none;
+                border-radius: 0;
+
+            }
+
+            div.circle-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img.circle {
+                    height: 60%;
+                    width: 50%;
+                }
+            }
+
+        }
+    }
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+} */
+
+
+div.header-grid {
+    display: grid;
+    grid-template-columns: .75fr 2fr .75fr .5fr;
+    height: 100%;
+    width: 100%;
+
+    span.header-text1 {
+        color: white;
+        font-size: 3vh;
+        font-weight: bold;
+
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+    }
+
+    span.header-text2 {
+        color: white;
+        font-size: 2vh;
+        font-weight: bold;
+
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    span.arrow {
+        color: white;
+        font-size: 3vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span.dots {
+        color: white;
+        font-size: 3vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+div.main-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 2fr 1fr;
+    height: 30%;
+    width: 100%;
+
+    img.swim {
+        height: 40%;
+        width: 100%;
+    }
+
+    img.id-photo {
+        height: 75%;
+        width: 100%;
+    }
+
+    div.text-under-id-photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3.2vh;
+        font-weight: bolder;
+    }
+
+}
+
+div.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr .66fr .66fr .66fr;
+    height: 100%;
+    width: 100%;
+
+    span.footer-text {
+        height: 50%;
+        width: 100%;
+        color: white;
+        font-size: 2vh;
+        font-weight: bold;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img.bell {
+        height: 50%;
+        width: 50%;
+    }
+
+    span.question-mark {
+        height: 50%;
+        width: 50%;
+
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 3vh;
+    }
+
+    img.gear {
+        height: 50%;
+        width: 50%;
+
+    }
+}
+
+div.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 15%;
+    width: 100%;
+
+    div.timer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 100%;
+        width: 90%;
+
+        div.black {
+            background-color: black;
+            height: 100%;
+            width: 100%;
+        }
+
+        div.green {
+            background-color: green;
+            height: 100%;
+            width: 100%;
+        }
+
+        div.beige {
+            background-color: beige;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.flex-break {
+    flex-basis: 100%;
+    height: 0;
+    width: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
