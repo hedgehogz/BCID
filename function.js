@@ -26,7 +26,14 @@ function openFullscreen() {
 
 function updateTextDiv(textDiv) {
     let text = window.prompt("Enter text")
-    if (text !== null && text.trim() !== "") {textDiv.textContent = text}
+    if (text !== null && text.trim() !== "") {
+      if (textDiv !== studentName) {
+        textDiv.textContent = text
+       }
+      else {
+      textDiv.textContent = text.toUpperCase()
+      }
+     }
 }
 
 function updateIdPhoto() {
