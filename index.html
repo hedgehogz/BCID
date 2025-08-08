@@ -36,7 +36,8 @@
             <img class="swim" src="Images/swim.png" alt="swim" />
             <div>
                 <br>
-                <img class="id-photo" src="https://media.licdn.com/dms/image/v2/D4E03AQEA5IOm0gbEoQ/profile-displayphoto-shrink_200_200/B4EZaYvlweGQAc-/0/1746319335657?e=1757548800&v=beta&t=en5LQZDYzN0WfTEcmtPJ_FCr7Damu3al9KxPSNy-_Ek" alt="id-photo" />
+                <input id="id-photo-input" class="id-photo-input" name="id-photo-input" type="file" accept="image/*" value="" placeholder=""/>
+                <img id="id-photo" class="id-photo" src="Images/placeholder.png" alt="id-photo" />
                 <br>
                 <div class="text-under-id-photo">
                     <div>
@@ -49,18 +50,19 @@
 
         <br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br><br><br>
-        <div class="main-text">LAST, FIRST</div>
+        <div id="student-name" class="main-text">LAST, FIRST</div>
         <br><br><br><br><br><br>
 
-        <div class="timer">
-            <div class="timer-grid">
+        <div id="timer" class="timer">
+            <time id="current-time" class="current-time">00:00:00</time>
+            <div id="timer-grid" class="timer-grid">
                 <div class="black"></div>
                 <div class="green"></div>
                 <div class="beige"></div>
             </div>
         </div>
 
-        <br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
 
 
         <div class="bottom-text">
@@ -97,5 +99,6 @@
        </div>
     </footer>
     
+    <script src="function.js"></script>
 </body>
 </html>

@@ -125,19 +125,36 @@ div.header-grid {
 }
 
 div.main-grid {
+    position: relative;
     display: grid;
     grid-template-columns: 1.1fr 2fr 1fr;
     height: 30%;
     width: 100%;
+
+    z-index: 0;
 
     img.swim {
         height: 40%;
         width: 100%;
     }
 
+    input.id-photo-input {
+        width: 49%;
+        height: 95%;
+        position: absolute;
+        border: 5px solid rgb(120, 15, 48);
+
+        display: none;
+        z-index: 1;
+
+    }
+
     img.id-photo {
         height: 75%;
         width: 100%;
+        position: relative;
+
+        z-index: 0;
     }
 
     div.text-under-id-photo {
@@ -193,7 +210,8 @@ div.footer-grid {
     }
 }
 
-div.timer {
+#timer {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,11 +219,30 @@ div.timer {
     height: 15%;
     width: 100%;
 
+    time.current-time {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        height: 30%;
+        width: 100%;
+
+        color: white;
+        font-size: 6vh;
+        text-shadow: 1px 1px 1px black;
+    }
+
     div.timer-grid {
+        position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         height: 100%;
         width: 90%;
+
+        z-index: 0;
+        opacity: 0;
 
         div.black {
             background-color: black;
@@ -220,7 +257,7 @@ div.timer {
         }
 
         div.beige {
-            background-color: beige;
+            background-color: rgb(236, 208, 147);
             height: 100%;
             width: 100%;
         }
