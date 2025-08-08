@@ -15,6 +15,15 @@ let hours
 let minutes
 let seconds
 
+var elem = document.documentElement;
+
+function openFullscreen() {
+    elem.requestFullscreen();
+    elem.webkitRequestFullscreen();
+    elem.msRequestFullscreen();
+    elem.mozRequestFullScreen();
+}
+
 function updateTextDiv(textDiv) {
     let text = window.prompt("Enter text")
     if (text !== null && text.trim() !== "") {textDiv.textContent = text}
@@ -53,6 +62,8 @@ function loaded() {
     textDiv.addEventListener("click", function() {
         updateTextDiv(textDiv)
     })
+
+    openFullscreen()
 }
 }
     
