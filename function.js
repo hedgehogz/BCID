@@ -6,12 +6,19 @@ let timeElement = document.getElementById("current-time")
 let idPhoto = document.getElementById("id-photo")
 let idPhotoInput = document.getElementById("id-photo-input")
 
+let text1 = document.getElementById("text1")
+let text2 = document.getElementById("text2")
 let studentName = document.getElementById("student-name")
 
 let timeNow
 let hours
 let minutes
 let seconds
+
+function updateTextDiv(textDiv) {
+    let text = window.prompt("Enter text")
+    if (text !== null && text.trim() !== "") {textDiv.textContent = text}
+}
 
 function updateIdPhoto() {
     let files = idPhotoInput.files
@@ -40,8 +47,16 @@ function loaded() {
     updateTime()
     setInterval(updateTime, 1000)
     setInterval(updateOpacity, 10)
+
+    for (let textDiv of [text1, text2, studentName]) {
+    textDiv.addEventListener("click", function() {
+        updateTextDiv(textDiv)
+    })
+}
 }
     
 document.addEventListener("DOMContentLoaded", loaded)
 idPhoto.addEventListener("click", triggerInput)
 idPhotoInput.addEventListener("change", updateIdPhoto)
+
+ 
