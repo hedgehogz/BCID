@@ -39,7 +39,8 @@ function updateTime() {
 
 function updateOpacity() {
     timeGrid.style.opacity = (Math.sin(Date.now() / 500) + 1.25)/2; // Oscillate opacity between .25 and 1.25
-    timeElement.style.left = Math.sin(Date.now() / 500) * 250 + "px"
+    timeElement.style.position = "absolute"
+    timeElement.style.left = Math.sin(Date.now() / 500) * 25 + "vw"
 }
 
 function loaded() {
