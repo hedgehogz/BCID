@@ -24,6 +24,7 @@ function updateTextDiv(textDiv) {
       else {
       textDiv.textContent = text.toUpperCase()
       }
+     }
 }
 
 function updateIdPhoto() {
