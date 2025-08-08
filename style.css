@@ -226,10 +226,8 @@ div.footer-grid {
         align-items: center;
         z-index: 1;
 
-        height: 30%;
-        width: 100%;
-
-        left: 0;
+        height: 300px;
+        width: 500px;
 
         color: white;
         font-size: 6vh;
