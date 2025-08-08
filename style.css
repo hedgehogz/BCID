@@ -153,8 +153,8 @@ div.main-grid {
         height: 75%;
         width: 100%;
 
-        max-height: 75%;
-        max-width: 100%;
+        max-height: 600px;
+        max-width: 450px;
 
         position: relative;
 
