@@ -17,13 +17,6 @@ let seconds
 
 var elem = document.documentElement;
 
-function openFullscreen() {
-    elem.requestFullscreen();
-    elem.webkitRequestFullscreen();
-    elem.msRequestFullscreen();
-    elem.mozRequestFullScreen();
-}
-
 function updateTextDiv(textDiv) {
     let text = window.prompt("Enter text")
     if (text !== null && text.trim() !== "") {
@@ -70,7 +63,6 @@ function loaded() {
         updateTextDiv(textDiv)
     })
 
-    openFullscreen()
 }
 }
     
