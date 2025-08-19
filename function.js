@@ -11,6 +11,7 @@ let text2 = document.getElementById("text2")
 let studentName = document.getElementById("student-name")
 
 let barrier = document.getElementById("barrier")
+let barrierImage = document.getElementById("barrier-image")
 let form = document.getElementById("password-form")
 let passwordInput = document.getElementById("password")
 
@@ -28,6 +29,12 @@ function formSubmitted(event) {
     if (value == password) {
         console.log("submitted")
         barrier.style.display = "none"
+    }
+    else {
+        barrierImage.src = "https://media.tenor.com/tWYl7uFqAr4AAAAM/anandoe.gif"
+        setTimeout(() => {
+            barrierImage.src = "https://www.shutterstock.com/image-vector/scheming-villain-emoticon-rubbing-his-600nw-1194509842.jpg"
+        }, 2000);
     }
 }
 
