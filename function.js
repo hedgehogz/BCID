@@ -10,6 +10,9 @@ let text1 = document.getElementById("text1")
 let text2 = document.getElementById("text2")
 let studentName = document.getElementById("student-name")
 
+let header = document.getElementById("header")
+let footer = document.getElementById("footer")
+
 let barrier = document.getElementById("barrier")
 let barrierImage = document.getElementById("barrier-image")
 let form = document.getElementById("password-form")
@@ -29,6 +32,8 @@ function formSubmitted(event) {
     if (value == password) {
         console.log("submitted")
         barrier.style.display = "none"
+        header.style.display = "block"
+        footer.style.display = "block"
     }
     else {
         barrierImage.src = "https://media.tenor.com/tWYl7uFqAr4AAAAM/anandoe.gif"
