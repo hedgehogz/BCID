@@ -10,10 +10,26 @@ let text1 = document.getElementById("text1")
 let text2 = document.getElementById("text2")
 let studentName = document.getElementById("student-name")
 
+let barrier = document.getElementById("barrier")
+let form = document.getElementById("password-form")
+let passwordInput = document.getElementById("password")
+
+let password = "858hedgehogz858"
+
 let timeNow
 let hours
 let minutes
 let seconds
+
+function formSubmitted(event) {
+    event.preventDefault()
+    let value = passwordInput.value
+    console.log("Password submitted:", value)
+    if (value == password) {
+        console.log("submitted")
+        barrier.style.display = "none"
+    }
+}
 
 function updateTextDiv(textDiv) {
     let text = window.prompt("Enter text")
@@ -60,3 +76,4 @@ function loaded() {
 document.addEventListener("DOMContentLoaded", loaded)
 idPhoto.addEventListener("click", triggerInput)
 idPhotoInput.addEventListener("change", updateIdPhoto)
+form.addEventListener("submit", formSubmitted)
